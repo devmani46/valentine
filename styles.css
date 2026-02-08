@@ -1,0 +1,148 @@
+/* Improved Valentine Theme */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #ffebee, #fce4ec);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 90%;
+  animation: fadeIn 1s ease-in;
+}
+
+.left-container {
+  flex: 1;
+  text-align: center;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+  font-size: 2.8em;
+  color: #e91e63;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.yes-button, .no-button {
+  font-size: 1.4em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  outline: none;
+}
+
+.yes-button {
+  background: linear-gradient(145deg, #4caf50, #66bb6a);
+  color: white;
+  box-shadow: 0 8px 15px rgba(76, 175, 80, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.yes-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(76, 175, 80, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.yes-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3), inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-button {
+  background: linear-gradient(145deg, #f44336, #e57373);
+  color: white;
+  box-shadow: 0 8px 15px rgba(244, 67, 54, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.no-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(244, 67, 54, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.no-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(244, 67, 54, 0.3), inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gif_container {
+  margin-top: 30px;
+}
+
+.gif_container video {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.gif_container video:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .yes-button, .no-button {
+    font-size: 1.2em;
+    padding: 10px 20px;
+  }
+}
+  
